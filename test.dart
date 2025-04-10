@@ -1,5 +1,17 @@
 import 'package:flutter_test/flutter_test.dart';
 
+///      TRUE
+///       4
+///       2
+///   1      7
+///         5
+///        9
+
+///       FALSE
+///         12
+///         2
+///   1     3     5
+
 String ArrayChallenge(List<String> strArr) {
   Map<int, List<int>> tree = {};
   Set<int> children = {};
@@ -87,7 +99,7 @@ void main() {
     });
 
     test('Invalid - more than 2 children', () {
-      final result = ArrayChallenge(["(1,2)", "(3,2)", "(5,2)", "(4,3)"]);
+      final result = ArrayChallenge(["(1,2)", "(2,12)", "(3,2)", "(5,2)"]);
       expect(result, equals("false"));
     });
 
@@ -107,6 +119,3 @@ void main() {
     });
   });
 }
-
-///    2 3
-///  1
