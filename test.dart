@@ -1,16 +1,25 @@
 import 'package:flutter_test/flutter_test.dart';
 
-///      TRUE
-///       4
-///       2
-///   1      7
-///         5
-///        9
+/// ✅ Valid Binary Tree
+              2
+             / \
+            1   7
+               /
+              5
+             /
+            9
+           /
+          4
 
-///       FALSE
-///         12
-///         2
-///   1     3     5
+
+/// ❌ Invalid Binary Tree 
+               12
+               /
+              2
+            / | \
+           1  3  5
+
+
 
 String ArrayChallenge(List<String> strArr) {
   Map<int, List<int>> tree = {};
